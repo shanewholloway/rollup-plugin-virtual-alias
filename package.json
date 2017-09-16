@@ -1,0 +1,35 @@
+{
+  "name": "rollup-plugin-virtual-alias",
+  "version": "1.0.0",
+  "description": "Alias dependencies using virtual modules. (Such as 'react' to 'preact-compat')",
+  "license": "MIT",
+  "author": "Shane Holloway",
+  "homepage": "https://github.com/shanewholloway/rollup-plugin-virtual-alias#readme",
+  "main": "dist/rollup-plugin-virtual-alias.cjs.js",
+  "module": "dist/rollup-plugin-virtual-alias.esm.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanewholloway/rollup-plugin-virtual-alias.git"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "resolve",
+    "alias"
+  ],
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "mocha": "^3.5.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-virtual": "^1.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "pretest": "npm run build",
+    "build": "rollup -c"
+  }
+}
