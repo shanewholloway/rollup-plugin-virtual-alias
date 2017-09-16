@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-virtual-alias",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alias dependencies using virtual modules. (Such as 'react' to 'preact-compat')",
   "license": "MIT",
   "author": "Shane Holloway",
@@ -20,12 +20,14 @@
     "resolve",
     "alias"
   ],
+  "dependencies": {
+    "rollup-plugin-virtual": "^1.0.1"
+  },
   "devDependencies": {
     "eslint": "^4.4.1",
     "mocha": "^3.5.0",
     "rollup": "^0.50.0",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-virtual": "^1.0.1"
+    "rollup-plugin-node-resolve": "^3.0.0"
   },
   "scripts": {
     "test": "mocha",
