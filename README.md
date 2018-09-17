@@ -8,14 +8,14 @@ Suppose you are working with an existing codebase and want to substitute one
 API compatible dependency for another. In my case, I wanted to try
 `preact-compat` in place of `react`.
 
-```js
-// src.main.js
+`src.main.js`:
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 ```
 
-```js
-// rollup.config.js
+`rollup.config.js`:
+```javascript
 import virtual_alias from 'rollup-plugin-virtual-alias';
 
 export default {
@@ -38,7 +38,7 @@ As with `rollup-plugin-virtual`, use this plugin __before__ other plugins like
 This package translates each pair in the mapping passed to `virtual_alias()`
 into a module string for `rollup-plugin-virtual`.  So the following:
 
-```js
+```javascript
 import virtual_alias from 'rollup-plugin-virtual-alias';
 
     // ...
@@ -52,7 +52,7 @@ import virtual_alias from 'rollup-plugin-virtual-alias';
 
 Is equivalent to:
 
-```js
+```javascript
 import virtual from 'rollup-plugin-virtual';
 
     // ...
